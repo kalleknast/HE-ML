@@ -56,7 +56,7 @@ p <- pars("FandV", lambda=80, L=4)
  ```
  Decrypt with the secret key and check the result!!
  ```r
- > dec(k$sk, ct2) == 5
+dec(k$sk, ct2) == 5
 [1] TRUE
  ```
  Amazing!!
