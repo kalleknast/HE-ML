@@ -1,8 +1,9 @@
 # HE-ML
 
 ## Homomorphic Encryption in R
+Based on http://www.louisaslett.com/EncryptedStats/
 
-### Install the HomomorphicEncryption R Package 
+### Install the HomomorphicEncryption R Package
 
 #### General libraries
 ```
@@ -18,9 +19,14 @@ sudo apt install r-base-core r-base-dev
 install.packages(c("Rcpp", "RcppParallel", "gmp")) 
 ```
 
-#### Finally install the HomomorphicEncryption package
+#### From R install the HomomorphicEncryption package
 ```r
 install.packages("http://www.louisaslett.com/HomomorphicEncryption/dl/HomomorphicEncryption_0.2.tar.gz", repos = NULL, type="source") 
+```
+
+#### Finally, from R get the EncryptedStats package
+```r
+install.packages("http://www.louisaslett.com/EncryptedStats/dl/EncryptedStats_0.5.tar.gz", repos=NULL) 
 ```
 
 
