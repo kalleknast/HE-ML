@@ -96,20 +96,20 @@ Error in enc.Rcpp_FandV_pk(k$pk, X) : Only integers can be encrypted.
 
 Everything to integer
 ```r
-X[, 3] <- as.integer(X[, 3] * 100
+X[, 3] <- as.integer(X[, 3] * 100)
 ```
 
 ```r
 > head(X)
-       day time   temp
-[1,]   346  840 363300
-[2,]   346  850 363400
-[3,] 34600  900 363500
-[4,]   346  910 364200
-[5,]   346  920 365400
-[6,]   346  930 366900
-
+     day time temp
+[1,] 346  840 3633
+[2,] 346  850 3634
+[3,] 346  900 3635
+[4,] 346  910 3642
+[5,] 346  920 3654
+[6,] 346  930 3669
 ```
+
 Encode
 ```r
 cx = enc(k$pk, X)
