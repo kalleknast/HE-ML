@@ -29,6 +29,43 @@ install.packages("http://www.louisaslett.com/HomomorphicEncryption/dl/Homomorphi
 install.packages("http://www.louisaslett.com/EncryptedStats/dl/EncryptedStats_0.5.tar.gz", repos=NULL) 
 ```
 
+### Test homomorphic encryption
+
+Load the library
+```r
+library(HomomorphicEncryption)
+```
+Chose cryptographic backend, e.g.
+```r
+p <- pars("FandV", lambda=80, L=4)
+```
+ Generate a keypair
+ ```r
+ k <- keygen(p)
+ k$pk   # public key
+ k$sk   # private key
+ ```
+ Encrypt some data with the public key
+ ```r
+ ct0 <- enc(k$pk, 2)   # 2
+ ct1 <- enc(k$pk, 3)   # 3
+ ```
+ Add ciphertexts
+ ```r
+ ct2 <- ct0 + ct1
+ ```
+ Decrypt with the secret key and check the result!!
+ ```r
+ > dec(k$sk, ct2) == 5
+[1] TRUE
+ ```
+ Amazing!!
+ 
+ 
+ 
+
+
+
 
 
 
