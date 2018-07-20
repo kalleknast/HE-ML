@@ -179,6 +179,19 @@ Problems
 Error in base::colSums(x, na.rm = na.rm, dims = dims, ...) : 
   'x' must be an array of at least two dimensions
 ```
+However plain text works
+```r
+> snb1.predProb <- predict(model=snb1.fit, newX=X_test, type="prob", sk=k$sk)
+> snb1.predProb
+ [1] 0.5766593 0.6816162 0.6988766 0.7345798 0.6784009 0.7105245 0.7534201
+ [8] 0.7609618 0.7438212 0.7152311 0.6883512 0.6653319 0.7185305 0.7239851
+[15] 0.7371426 0.7575045 0.7606394 0.7885784 0.7736251 0.7595293 0.7448454
+[22] 0.7432697 0.8757474 0.8204972 0.8302251 0.8207843 0.7259565 0.7086159
+[29] 0.6920834 0.7374551
+attr(,"class")
+[1] "SNB.predProb"
+```
+
 
 More problems
 ```r
@@ -204,21 +217,3 @@ attr(,"class")
 [1] "SNB.predRaw"
 
 ```
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
