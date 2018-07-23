@@ -1,6 +1,7 @@
-* HE-ML
+# HE-ML
 https://github.com/kimandrik/HEML
 
+## Installation
 Install dependencies
 ```console
 $ sudo apt install libntl*
