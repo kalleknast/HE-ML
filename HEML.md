@@ -41,20 +41,21 @@ $ git clone https://github.com/kimandrik/HEML.git
 ```
 Edit a makefile (in spite of having "Automatically-generated file. Do not edit!" on the 2nd line)
 Replace line 47 in run/makefile
-```vi
+```make
 g++ -L/Users/Han/Documents/Git/Programming/HEAANBOOT/HEAANBOOT/lib -L/Users/kimandrik/git/HEAANBOOT/HEAANBOOT/Debug -L/usr/local/lib -pthread -o "HEML" $(OBJS) $(USER_OBJS) $(LIBS)
 ```
 with
-```vi
+```make
 g++ -L../../../HEAANBOOT/HEAANBOOT/lib -L../../../HEAANBOOT/HEAANBOOT/Debug -L/usr/local/lib -pthread -o "HEML" $(OBJS) $(USER_OBJS) $(LIBS)
 ```
 and similarly line 31 in run/src/subdir.mk
-```vi
+```make
 g++ -I/Users/Han/Documents/Git/Programming/HEAANBOOT/HEAANBOOT/src -I/usr/local/include -I/Users/kimandrik/git/HEAANBOOT/HEAANBOOT/src -O3 -pthread -c -std=c++11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 ```
+with
 ```
 g++ -I../../../HEAANBOOT/HEAANBOOT/src -I/usr/local/include -I../../../HEAANBOOT/HEAANBOOT/src -O3 -pthread -c -std=c++11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
-    ```
+``
         
 Compile
 ```console
