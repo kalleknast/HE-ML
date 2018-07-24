@@ -1,5 +1,6 @@
 # EncryptedStats -- Homomorphic Encryption in R
-From http://www.louisaslett.com/EncryptedStats/
+
+[EncryptedStats webpage](http://www.louisaslett.com/EncryptedStats/)
 
 ## Conclusion
 * Fails on the tested dataset
