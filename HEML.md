@@ -10,6 +10,8 @@ $ sudo apt install libpthread-*
 
 Get, install and test the HEAAN library
 ```console
+$ mkdir HE
+$ cd HE
 $ git clone https://github.com/kimandrik/HEAAN.git
 $ cd HEAAN/HEAAN/lib
 $ make all
@@ -66,6 +68,17 @@ $ cd HEML/HEML/lib
 $ make all
 $ cd ../run
 $ make all
+```
+
+Testing (see ```HEML/HEML/src/HEML.cpp``` for details)
+```console
+$ ./HEML "../data/data103x1579.txt" 1 7 5 1 -1 1 5 1
+```
+ran well
+
+test 2
+```console
+./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
 ```
 
 
