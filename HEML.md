@@ -3,6 +3,8 @@
 
 [github repo](https://github.com/kimandrik/HEML)
 
+## Conclusion
+
 ## Installation
 Install dependencies
 ```console
@@ -72,7 +74,10 @@ $ cd ../run
 $ make all
 ```
 
-Testing (see ```HEML/HEML/src/HEML.cpp``` for details)
+##Testing 
+see ```HEML/HEML/src/HEML.cpp``` for details
+
+test 1
 ```console
 $ ./HEML "../data/data103x1579.txt" 1 7 5 1 -1 1 5 1
 ```
