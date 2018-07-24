@@ -1,35 +1,39 @@
-# HE-ML
+# EncryptedStats -- Homomorphic Encryption in R
+From http://www.louisaslett.com/EncryptedStats/
 
-## Homomorphic Encryption in R
-Based on http://www.louisaslett.com/EncryptedStats/
+## Conclusion
+* Fails on the tested dataset
+* Only supports integer data
 
-### Install the HomomorphicEncryption R Package
 
-#### General libraries
+
+## Install the HomomorphicEncryption R Package
+
+### General libraries
 ```
 sudo apt-get install libgmp-dev libflint-dev libmpfr-dev
 ```
-#### Get R
+### Get R
 ```
 sudo apt install r-base-core r-base-dev
 ```
 
-#### Start R and install some packages
+### Start R and install some packages
 ```r
 install.packages(c("Rcpp", "RcppParallel", "gmp")) 
 ```
 
-#### From R install the HomomorphicEncryption package
+### From R install the HomomorphicEncryption package
 ```r
 install.packages("http://www.louisaslett.com/HomomorphicEncryption/dl/HomomorphicEncryption_0.2.tar.gz", repos = NULL, type="source") 
 ```
 
-#### Finally, from R get the EncryptedStats package
+### Finally, from R get the EncryptedStats package
 ```r
 install.packages("http://www.louisaslett.com/EncryptedStats/dl/EncryptedStats_0.5.tar.gz", repos=NULL) 
 ```
 
-### Test homomorphic encryption
+## Test homomorphic encryption
 
 Load the library
 ```r
@@ -62,14 +66,14 @@ dec(k$sk, ct2) == 5
  **Splendid**
  
  
- ### Test EncryptedStats
+## Test EncryptedStats
  
- #### Load the EncryptedStats package
- ```r
- > library(EncryptedStats)
- ```
+### Load the EncryptedStats package
+```r
+`> library(EncryptedStats)
+```
  
-#### Load and prepare some data
+### Load and prepare some data
 ```r
 data(beavers)
 
@@ -129,7 +133,7 @@ cX_test = enc(k$pk, X_test)
 cy_test = enc(k$pk, y_test)
 ```
 
-#### Fit encrpyted data
+### Fit encrpyted data
 ```r
 snb1.fit <- SNB.fit(X_train, y_train, paired=T, pk=k$pk)    # fit with plain texts
 snb2.fit <- SNB.fit(cX_train, cy_train, paired=T, pk=k$pk)  # fit with cihper texts
@@ -171,7 +175,7 @@ attr(,"crypt")
 ```
 
 
-#### Predict
+### Predict
 
 Problems
 ```r
