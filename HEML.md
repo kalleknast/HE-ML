@@ -90,9 +90,10 @@ $ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 1 1 "../data/1_testing_data_
 $ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
 ```
 both fails:
-``RR: conversion of a non-finite double
-  Aborted (core dumped)
-  ```
+```
+RR: conversion of a non-finite double
+Aborted (core dumped)
+```
 
 
 
