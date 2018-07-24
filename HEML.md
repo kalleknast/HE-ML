@@ -78,7 +78,7 @@ ran well
 
 test 2
 ```console
-./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
+$ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
 ```
 
 
