@@ -74,7 +74,7 @@ $ cd ../run
 $ make all
 ```
 
-##Testing 
+## Testing 
 see ```HEML/HEML/src/HEML.cpp``` for details
 
 test 1
@@ -89,6 +89,12 @@ $ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 1 1 "../data/1_testing_data_
 # Plaintext
 $ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
 ```
+both fails:
+``RR: conversion of a non-finite double
+  Aborted (core dumped)
+  ```
+
+
 
 
 
