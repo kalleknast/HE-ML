@@ -1,5 +1,7 @@
 # HEML
-https://github.com/kimandrik/HEML
+[Paper](https://eprint.iacr.org/2018/254)
+
+[github repo](https://github.com/kimandrik/HEML)
 
 ## Installation
 Install dependencies
