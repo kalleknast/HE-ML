@@ -85,14 +85,9 @@ $ ./HEML "../data/data103x1579.txt" 1 7 5 1 -1 1 5 1
 test 2
 ```console
 # Ciphertext
-$ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 1 1 "../data/1_testing_data_csv"
+$ ./HEML "../data/1_training_data.csv" 1 7 5 1 -1 1 1 1 "../data/1_testing_data.csv"
 # Plaintext
-$ ./HEML "../data/1_training_data_csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data_csv"
-```
-both fails:
-```
-RR: conversion of a non-finite double
-Aborted (core dumped)
+$ ./HEML "../data/1_training_data.csv" 1 7 5 1 -1 1 0 1 "../data/1_testing_data.csv"
 ```
 
 
