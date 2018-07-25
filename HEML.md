@@ -3,6 +3,10 @@
 
 [github repo](https://github.com/kimandrik/HEML)
 
+The routines rely on a leveled HE scheme.
+* Leveled HE schemes allows up to L multiplications, i.e. they have a bounded circuit depth.
+* "Normal" HE allow a unlimited number of multiplications, i.e. can evaluate any circuit.
+
 ## Conclusion
 
 ## Installation
