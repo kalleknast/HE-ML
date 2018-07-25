@@ -6,6 +6,7 @@
 The routines rely on a leveled HE scheme.
 * Leveled HE schemes allows up to L multiplications, i.e. they have a bounded circuit depth.
 * "Normal" HE allow a unlimited number of multiplications, i.e. can evaluate any circuit.
+
 This reliance on a leveled HE scheme limits the number of weight updates that can be done. However, for a multi-layer neural network the number of weight updates cannot be limited, making leveled HE schemes unsuitlable for this purpose (unless the updatel limit is very high).
 
 ## Conclusion
