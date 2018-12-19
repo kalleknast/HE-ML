@@ -1,9 +1,11 @@
-# HE-ML
+# Data obfuscation methods for privacy-preserving machine learning
+
+## HE-ML
 
 Tests of various Homomorphic Encryption (HE) Machine Learning (ML) frameworks.
 See the markdown files for individual frameworks.
 
-Thested this far:
+### Tested
 * [EncryptedStats -- Homomorphic Encryption in R](https://github.com/kalleknast/HE-ML/blob/master/EncryptedStats.md)
 
     [EncryptedStats webpage](http://www.louisaslett.com/EncryptedStats/)
@@ -12,3 +14,14 @@ Thested this far:
     [Paper](https://eprint.iacr.org/2018/254)
 
     [github repo](https://github.com/kimandrik/HEML)
+    
+### Not yet tested
+* [NuCyphe's nuFHE](https://github.com/nucypher/nuFHE)
+
+### Conclusion
+Not viable
+
+## Clear-text data obfuscation
+
+### Geometric Data Perturbation ([GDP](https://cecs.wright.edu/~keke.chen/))
+
