@@ -25,7 +25,7 @@ Not viable
 
 ### Geometric Data Perturbation ([GDP](https://cecs.wright.edu/~keke.chen/))
 
-[Paper](https://www.researchgate.net/publication/220283635_Geometric_data_perturbation_for_privacy_preserving_outsourced_data_mining)
+[Paper](http://cecs.wright.edu/~keke.chen/papers/gdp-kais-online.pdf)
 
 [Code and test](https://github.com/kalleknast/GDP)
 
